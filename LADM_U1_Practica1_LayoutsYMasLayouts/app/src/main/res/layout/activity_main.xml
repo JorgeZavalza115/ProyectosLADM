@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0A5726"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/spotylogo"
+        android:layout_width="93dp"
+        android:layout_height="143dp"
+        android:src="@drawable/spotify1" />
+
+    <ImageView
+        android:id="@+id/library"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="47dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/ic_baseline_library_music_24" />
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="310dp"
+        android:layout_height="260dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp"
+        android:src="@drawable/launcher" />
+
+    <TextView
+        android:id="@+id/from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="120dp"
+        android:text="Playing from My Music"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/song"
+        android:layout_below="@+id/imagen"
+        android:text="Rising Hope"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/playpause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@android:style/MediaButton.Play"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/song"
+        android:layout_marginTop="30dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/before"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@android:style/MediaButton.Previous"
+        android:layout_below="@+id/song"
+        android:layout_toLeftOf="@+id/playpause"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/after"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@android:style/MediaButton.Next"
+        android:layout_below="@+id/song"
+        android:layout_toRightOf="@+id/playpause"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"/>
+
+</RelativeLayout>
